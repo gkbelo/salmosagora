@@ -5,29 +5,43 @@
 		<h5> List with all psalms, choose one: </h5>
 		<br>
 		<div class="button-bar">
-			<a class="button button-grid button-calm" href="#/psalmgrid">
+			<a class="button button-grid button-calm" href="#/psalm/1">
 				1
 			</a>
-			<a class="button button-grid button-calm" href="#/psalmgrid">
+			<a class="button button-grid button-calm" href="#/psalm/2">
 				2
 			</a>
-			<a class="button button-grid button-calm" href="#/psalmgrid">
+			<a class="button button-grid button-calm" href="#/psalm/3">
 				3
 			</a>
 		</div>
 
 		<div class="button-bar">
-			<a class="button button-grid  button-calm" href="#/psalmgrid">
+			<a class="button button-grid  button-calm" href="#/psalm">
 				4
 			</a>
-			<a class="button button-grid  button-calm" href="#/psalmgrid">
+			<a class="button button-grid  button-calm" href="#/psalm">
 				5
 			</a>
-			<a class="button button-grid button-calm" href="#/psalmgrid">
+			<a class="button button-grid button-calm" href="#/psalm">
 				6
 			</a>
 		</div>
 
+		<div>
+			<ion-list> 
+				<ion-item ng-repeat="psalm in psalms">
+					<h4>
+						psalm - {{psalm.id}}
+						verse - {{psalm.nome}}
+						{{psalm.text}}
+					</h4>
+					<h5>
+						amen
+					</h5>
+				</ion-item>
+			</ion-list>
+		</div>
 
 
 

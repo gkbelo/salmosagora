@@ -1,6 +1,6 @@
 /* rotas da PedidaApp */
 
-angular.module('starter').config(function($stateProvider, $urlRouterProvider) {
+angular.module('psalmstoday').config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/home');
 
   $stateProvider
@@ -15,6 +15,12 @@ angular.module('starter').config(function($stateProvider, $urlRouterProvider) {
     url: '/psalmgrid',
     templateUrl: 'templates/psalmgrid.html',
     controller: 'PsalmGridController'
+  })
+
+  .state('psalm', {
+    url: '/psalm/:psalmId',
+    templateUrl: 'templates/psalm.html',
+    controller: 'PsalmController'
   })
 
 });
