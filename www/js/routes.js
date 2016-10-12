@@ -1,10 +1,9 @@
-/* rotas da PedidaApp */
-
+/* rota do app*/
 angular.module('psalmstoday').config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/home');
 
   $stateProvider
-
+  
   .state('home', {
     url: '/home',
     templateUrl: 'templates/home.html',

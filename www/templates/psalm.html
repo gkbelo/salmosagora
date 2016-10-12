@@ -1,8 +1,21 @@
 <ion-view>
 	<ion-nav-title>Psalm - {{psalm.id}}</ion-nav-title>
-	<ion-content>		
-		<p>open psalm text xxxxxx</p>
-		<p>id := {{psalm.id}} </p>
-		<p>texto := {{psalm.nome}} </p>
+	<ion-content>
+		<div>
+			<p>open psalm text xxxxxx</p>
+			<p>psalm_id := {{psalm.id}} </p>
+			<p>psalm_total := {{psalm.verse_total}} </p>
+			<p>verse    := {{psalm.verses[0].id}} </p>
+			<p>text     := {{psalm.verses[0].text}} </p>
+			<p>text     := {{psalm.verses[1].text}} </p>
+
+		</div>
+		
+		<div ng-repeat="ps in psalmx">
+			<p>verse    := {{ps.verses[0].id}} </p>
+			<p>text     := {{ps.verses[0].text}} </p>
+			<p>text     := {{ps.verses[1].text}} </p>
+		</div>
+
 	</ion-content>
 </ion-view>
