@@ -3,10 +3,11 @@ angular.module('psalmstoday')
     var url = 'data/psalmsData.json';
     
     return {
-        lista: function(){
+        dados: function(){
             return $http.get(url).then(function(response){
                 return response.data;
             });
         }
     };
-});
+})
+;

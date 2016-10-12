@@ -1,6 +1,6 @@
 {"psalm": [
   { "id": 1
-  , "verse_total": 47
+  , "verse_total": 2
   , "verses": [
       {"id": 1, "text": "That man hath perfect blessedness who walketh not astra chair:"},
       {"id": 2, "text": "But placeth his delight Upon GOD`s law, and meditates on his law day and t."},
@@ -8,15 +8,15 @@
     ]
   },
   { "id": 2
-  , "verse_total": 19
+  , "verse_total": 2
   , "verses": [
       {"id": 1, "text": "psalm 2, text is herechair:"},
-      {"id": 2, "text": "psalm 2 placeth his delight Upon GOD`s law, and meditates on his law day and t."},
+      {"id": 2, "text": "psalm 2  v2 placeth his delight Upon GOD`s law, and meditates on his law day and t."},
       {"id": 3, "text": "psalm 2 verse 3 is here!"}
     ]
   },
   { "id": 3
-  , "verse_total": 35
+  , "verse_total": 2
   , "verses": [
       {"id": 1, "text": "psalm 3, text is herechair:"},
       {"id": 2, "text": "psalm 3 placeth his delight Upon GOD`s law, and meditates on his law day and t."},
@@ -27,6 +27,7 @@
   , "verse_total": 2
   , "verses": [
       {"id": 1, "text": "psalm 4, text is herechair:"},
+      {"id": 1, "text": "psalm 4, verse 2222"},
       {"id": 2, "text": "psalm 4 placeth his delight Upon GOD`s law, and meditates on his law day and t."}
     ]
   }  
