@@ -4,22 +4,22 @@ angular.module('psalmstoday').config(function($stateProvider, $urlRouterProvider
 
   $stateProvider
   
-  .state('home', {
-    url: '/home',
-    templateUrl: 'templates/home.html',
-    controller: 'HomeController'
-  })
+    .state('home', {
+      url: '/home',
+      templateUrl: 'templates/home.html',
+      controller: 'HomeController'
+    })
 
-  .state('psalmgrid', {
-    url: '/psalmgrid',
-    templateUrl: 'templates/psalmgrid.html',
-    controller: 'PsalmGridController'
-  })
-
-  .state('psalm', {
-    url: '/psalm/:psalmId',
-    templateUrl: 'templates/psalm.html',
-    controller: 'PsalmController'
-  })
-
+    .state('psalmgrid', {
+      url: '/psalmgrid',
+      templateUrl: 'templates/psalmgrid.html',
+      controller: 'PsalmGridController'
+    })
+    
+    .state('psalm', {
+      url: '/psalm/:psalmId',
+      cache: false,
+      templateUrl: 'templates/psalm.html',
+      controller: 'PsalmController'
+    });
 });

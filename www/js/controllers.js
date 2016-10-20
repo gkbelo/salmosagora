@@ -5,7 +5,23 @@ angular.module('psalmstoday')
 })
 
 //_PsalmGridController
-.controller('PsalmGridController', function($scope) {
+.controller('PsalmGridController', function($scope, PsalmsService) {
+    PsalmsService.dados().then(function(dados){
+      $scope.psalms = dados.psalm;
+    });
+
+    //slider_functions
+    $scope.sliderIndexOptions = {
+        loop: false,
+        initialSlide: 0,
+        //effect: 'coverflow',
+        speed: 300
+      };
+
+    $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
+      $scope.activeIndex = data.activeIndex;
+      $scope.previousIndex = data.previousIndex;
+    });    
 })
 
 //_PsalmController
@@ -15,17 +31,16 @@ angular.module('psalmstoday')
     });
     
     //slider_functions
-    $scope.options = {
-      loop: true,
-      speed: 500
-    }
-
+    $scope.sliderOptions = {
+        loop: true,
+        initialSlide: 0,
+        //effect: 'coverflow',
+        speed: 300
+      };
+    
     $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
+      // data.slider is the instance of Swiper
       $scope.slider = data.slider;
-    });
-
-    $scope.$on("$ionicSlides.slideChangeStart", function(event, data){
-      console.log('Slide change is beginning');
     });
 
     $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){

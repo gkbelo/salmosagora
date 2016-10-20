@@ -1,4 +1,5 @@
 angular.module('psalmstoday')
+
 .service('PsalmsService', function($http, $q){
     var url = 'data/psalmsData.json';
     
