@@ -13,9 +13,8 @@ angular.module('psalmstoday')
     //slider_functions
     $scope.sliderIndexOptions = {
         loop: false,
-        initialSlide: 0,
-        //effect: 'coverflow',
-        speed: 300
+        speed: 300,
+        initialSlide: 0
       };
 
     $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
@@ -32,10 +31,10 @@ angular.module('psalmstoday')
     
     //slider_functions
     $scope.sliderOptions = {
-        loop: true,
-        initialSlide: 0,
-        //effect: 'coverflow',
-        speed: 300
+        loop: false,
+        speed: 300,
+        effect: 'coverflow',
+        initialSlide: 0
       };
     
     $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
