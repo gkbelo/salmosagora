@@ -1,7 +1,7 @@
 <ion-view title="Psalms" id="page3">
-	<ion-content>
-		<ion-slides options="sliderOptions" slider="data.slider" >			
-			<ion-slide-page ng-repeat="v in psalm.verses">
+	<ion-slides options="sliderOptions" slider="data.slider" >			
+		<ion-slide-page ng-repeat="v in psalm.verses">
+			<ion-content>
 				<div style="background-color:#cccccc" align=center class="list">
 					<h4 class="calm">Psalm #{{psalm.id}}</h4>
 					</br>
@@ -10,8 +10,13 @@
 				<div style="background-color:#cccccc" align=center>
 					<h5>{{v.text}}</h5>
 				</div>
-
-			</ion-slide-page>
-		</ion-slides>
-	</ion-content>
+			</ion-content>
+		</ion-slide-page>
+	</ion-slides>
+	<div class="bar bar-footer bar-calm">
+		<button class="button button-clear"><- L</button>
+		<div class="title">Title</div>
+		<button class="button button-clear">R -></button>
+	</div>
+	
 </ion-view>
