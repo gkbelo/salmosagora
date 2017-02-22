@@ -1347,7 +1347,7 @@
       {"id": 7, "text": "For I endure scorn for your sake, and shame covers my face."},
       {"id": 8, "text": "I am a foreigner to my own family, a stranger to my own mother’s children;"},
       {"id": 9, "text": "for zeal for your house consumes me, and the insults of those who insult you fall on me."},
-      {"id": 10, "text": "When I weep and fast, I must endure scorn;"}
+      {"id": 10, "text": "When I weep and fast, I must endure scorn;"},
       {"id": 11, "text": "when I put on sackcloth, people make sport of me."},
       {"id": 12, "text": "Those who sit at the gate mock me, and I am the song of the drunkards."},
       {"id": 13, "text": "But I pray to you, LORD, in the time of your favor; in your great love, O God, answer me with your sure salvation."},
@@ -1357,7 +1357,7 @@
       {"id": 17, "text": "Do not hide your face from your servant; answer me quickly, for I am in trouble."},
       {"id": 18, "text": "Come near and rescue me; deliver me because of my foes."},
       {"id": 19, "text": "You know how I am scorned, disgraced and shamed; all my enemies are before you."},
-      {"id": 20, "text": "Scorn has broken my heart and has left me helpless; I looked for sympathy, but there was none, for comforters, but I found none."}
+      {"id": 20, "text": "Scorn has broken my heart and has left me helpless; I looked for sympathy, but there was none, for comforters, but I found none."},
       {"id": 21, "text": "They put gall in my food and gave me vinegar for my thirst."},
       {"id": 22, "text": "May the table set before them become a snare; may it become retribution and a trap."},
       {"id": 23, "text": "May their eyes be darkened so they cannot see, and their backs be bent forever."},
@@ -1367,7 +1367,7 @@
       {"id": 27, "text": "Charge them with crime upon crime; do not let them share in your salvation."},
       {"id": 28, "text": "May they be blotted out of the book of life and not be listed with the righteous."},
       {"id": 29, "text": "But as for me, afflicted and in pain— may your salvation, God, protect me."},
-      {"id": 30, "text": "I will praise God’s name in song and glorify him with thanksgiving."}
+      {"id": 30, "text": "I will praise God’s name in song and glorify him with thanksgiving."},
       {"id": 31, "text": "This will please the LORD more than an ox, more than a bull with its horns and hooves."},
       {"id": 32, "text": "The poor will see and be glad— you who seek God, may your hearts live!"},
       {"id": 33, "text": "The LORD hears the needy and does not despise his captive people."},
@@ -1632,7 +1632,7 @@
       {"id": 69, "text": "He built his sanctuary like the heights, like the earth that he established forever."},
       {"id": 70, "text": "He chose David his servant and took him from the sheep pens;"},
       {"id": 71, "text": "from tending the sheep he brought him to be the shepherd of his people Jacob, of Israel his inheritance."},
-      {"id": 72, "text": "And David shepherded them with integrity of heart; with skillful hands he led them."},
+      {"id": 72, "text": "And David shepherded them with integrity of heart; with skillful hands he led them."}
     ]
   },
   { "id": 79
@@ -1665,7 +1665,7 @@
       {"id": 7, "text": "Restore us, God Almighty; make your face shine on us, that we may be saved."},
       {"id": 8, "text": "You transplanted a vine from Egypt; you drove out the nations and planted it."},
       {"id": 9, "text": "You cleared the ground for it, and it took root and filled the land."},
-      {"id": 10, "text": "The mountains were covered with its shade, the mighty cedars with its branches."}
+      {"id": 10, "text": "The mountains were covered with its shade, the mighty cedars with its branches."},
       {"id": 11, "text": "Its branches reached as far as the Sea,its shoots as far as the River."},
       {"id": 12, "text": "Why have you broken down its walls so that all who pass by pick its grapes?"},
       {"id": 13, "text": "Boars from the forest ravage it, and insects from the fields feed on it."},
@@ -1677,9 +1677,6 @@
       {"id": 19, "text": "Restore us, LORD God Almighty; make your face shine on us, that we may be saved."}
     ]
   },
-
-
-
   { "id": 81
   , "title": "For the director of music. According to gittith. Of Asaph."
   , "verses": [
@@ -1692,7 +1689,7 @@
       {"id": 7, "text": "In your distress you called and I rescued you, I answered you out of a thundercloud; I tested you at the waters of Meribah."},
       {"id": 8, "text": "Hear me, my people, and I will warn you— if you would only listen to me, Israel!"},
       {"id": 9, "text": "You shall have no foreign god among you; you shall not worship any god other than me."},
-      {"id": 10, "text": "I am the LORD your God, who brought you up out of Egypt. Open wide your mouth and I will fill it."}
+      {"id": 10, "text": "I am the LORD your God, who brought you up out of Egypt. Open wide your mouth and I will fill it."},
       {"id": 11, "text": "“But my people would not listen to me; Israel would not submit to me."},
       {"id": 12, "text": "So I gave them over to their stubborn hearts to follow their own devices."},
       {"id": 13, "text": "“If my people would only listen to me, if Israel would only follow my ways,"},
@@ -1701,8 +1698,6 @@
       {"id": 16, "text": "But you would be fed with the finest of wheat; with honey from the rock I would satisfy you.”"}
     ]
   },
-  
-
   { "id": 82
   , "title": "A psalm of Asaph."
   , "verses": [
@@ -3082,7 +3077,7 @@
       {"id": 7, "text": "Answer me quickly, LORD; my spirit fails. Do not hide your face from me or I will be like those who go down to the pit."},
       {"id": 8, "text": "Let the morning bring me word of your unfailing love, for I have put my trust in you. Show me the way I should go, for to you I entrust my life."},
       {"id": 9, "text": "Rescue me from my enemies, LORD, for I hide myself in you."},
-      {"id": 10, "text": "Teach me to do your will, for you are my God; may your good Spirit lead me on level ground."}
+      {"id": 10, "text": "Teach me to do your will, for you are my God; may your good Spirit lead me on level ground."},
       {"id": 11, "text": "For your name’s sake, LORD, preserve my life; in your righteousness, bring me out of trouble."},
       {"id": 12, "text": "In your unfailing love, silence my enemies; destroy all my foes, for I am your servant."}
     ]
