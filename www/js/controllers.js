@@ -1,7 +1,16 @@
 angular.module('psalmstoday')
 
 //_HomeController
-.controller('HomeController', function($scope) {
+.controller('HomeController', function($scope, PsalmsService, $stateParams) {
+    PsalmsService.dados().then(function(dados){
+      $scope.psalm = dados.psalm[$stateParams.psalmId-1];
+    });
+
+    function getRandomAll(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    };
+    $scope.v_random = getRandomAll(1, 150);
+    
 })
 
 //_PsalmGridController

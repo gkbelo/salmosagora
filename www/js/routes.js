@@ -6,6 +6,7 @@ angular.module('psalmstoday').config(function($stateProvider, $urlRouterProvider
   
     .state('home', {
       url: '/home',
+      cache: false,
       templateUrl: 'templates/home.html',
       controller: 'HomeController'
     })
