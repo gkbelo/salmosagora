@@ -45,7 +45,7 @@ angular.module('psalmstoday')
         effect: 'coverflow',
         initialSlide: 0
       };
-    
+          
     $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
       // data.slider is the instance of Swiper
       $scope.slider = data.slider;
@@ -55,5 +55,7 @@ angular.module('psalmstoday')
       $scope.activeIndex = data.activeIndex;
       $scope.previousIndex = data.previousIndex;
     });
+    
+
 })
 ;

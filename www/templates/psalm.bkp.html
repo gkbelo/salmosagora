@@ -1,13 +1,11 @@
 <ion-view title="Psalms" id="page3">
-		<ion-slides options="sliderOptions" slider="data.slider">
+		<ion-slides options="sliderOptions" slider="data.slider" >			
 			<ion-slide-page ng-repeat="v in psalm.verses">
-			
-			
-			<div>
 				<ion-content>
 					<div align="center" class="list">
 						<h4 class="calm">Psalm {{psalm.id}}</h4>
 					</div>
+					
 					<div class="card list" style="background-color:#cccccc" align="center">
 						<div class="item item-divider">
 							<h2>Verse {{v.id}}</h2>
@@ -16,9 +14,8 @@
 							<h2>{{v.text}}</h2>
 						</div>
 					</div>
-				</ion-content>
-			</div>
 
+				</ion-content>
 			</ion-slide-page>
 		</ion-slides>
 	
