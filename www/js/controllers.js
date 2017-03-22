@@ -33,11 +33,38 @@ angular.module('psalmstoday')
 })
 
 //_PsalmController
-.controller('PsalmController', function($scope, PsalmsService, $stateParams) {
+.controller('PsalmController', function($scope, PsalmsService, $stateParams, $ionicPopup) {
     PsalmsService.dados().then(function(dados){
       $scope.psalm = dados.psalm[$stateParams.psalmId-1];
     });
     
+    $scope.theText = 'share this';
+/*    $scope.toShare = function() {
+      window.plugins.socialsharing.share($scope.theText);
+    };
+
+    $scope.takeScreenshot = function() {
+      navigator.screenshot.save((function(e, r) {
+        if (e) {
+          $ionicPopup.alert({ title: 'Error!'
+                            , template: 'Screenshot unsuccessful' });
+        } else {
+          $ionicPopup.confirm({ title: 'Screenshot successful'
+                              , template: 'Click OK to share'
+          }).then(function(res) {
+            if (res) {
+              window.plugins.socialsharing.share(null, null, 'file://' + r.filePath);
+            } else {
+              $ionicPopup.alert({ title: 'Error!'
+                                , template: 'Could not share'
+              });
+            }
+          });
+        }
+      }), 'jpg', 50, 'randomScreenshot');
+    };
+    */
+
     //slider_functions
     $scope.sliderOptions = {
         loop: false,
@@ -55,6 +82,7 @@ angular.module('psalmstoday')
       $scope.activeIndex = data.activeIndex;
       $scope.previousIndex = data.previousIndex;
     });
+    
     
 
 })
