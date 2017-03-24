@@ -3,23 +3,19 @@
 			<ion-slide-page ng-repeat="v in psalm.verses">
 				<ion-content>
 					<div align="center" class="list">
-						<h4 class="calm">Psalm {{psalm.id}}</h4>
+						<br>
 					</div>
 					<div class="card list" style="background-color:#cccccc" align="center">
 						<div class="item item-divider">
-							<h2>Verse {{v.id}}</h2>
+							<h2 class="calm">Psalm {{psalm.id}}: {{v.id}}</h2>
 						</div>
 						<div class="item item-text-wrap">
 							<h2>{{v.text}}</h2>
 						</div>
 					</div>
-				
-					<div align="end" class="calm">
-						<br><br><br><br>
-						<a class="button button-icon icon ion-share positive" ng-click="toShare()">  Share</a>
-
-                  		<button class="button button-full button-royal" ng-click="takeScreenshot()">Take screenshot</button>
-						
+					<div align="end" class="calm padding">
+						<br><br><br>
+						<a class="button button-icon icon ion-share positive" ng-click="takeScreenshot()"> Share</a>
 					</div>
 				</ion-content>
 			</ion-slide-page>
