@@ -61,8 +61,5 @@ angular.module('psalmstoday')
       $scope.activeIndex = data.activeIndex;
       $scope.previousIndex = data.previousIndex;
     });
-    
-    
-
 })
 ;
