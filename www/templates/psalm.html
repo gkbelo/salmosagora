@@ -1,26 +1,31 @@
 <ion-view title="Psalms" id="page3">
-		<ion-slides options="sliderOptions" slider="data.slider">
-			<ion-slide-page ng-repeat="v in psalm.verses">
-				<ion-content>
-					<div align="center" class="list">
-						<br>
+	<ion-slides options="sliderOptions" slider="data.slider">
+		<ion-slide-page ng-repeat="v in psalm.verses">
+			<ion-content>
+				<div align="center" class="list">
+					<br>
+				</div>
+				<div class="card list" style="background-color:#cccccc" align="center">
+					<div class="item item-divider">
+						<h2 class="calm">Psalm {{psalm.id}}: {{v.id}}</h2>
 					</div>
-					<div class="card list" style="background-color:#cccccc" align="center">
-						<div class="item item-divider">
-							<h2 class="calm">Psalm {{psalm.id}}: {{v.id}}</h2>
-						</div>
-						<div class="item item-text-wrap">
-							<h2>{{v.text}}</h2>
-						</div>
+					<div class="item item-text-wrap">
+						<h2>{{v.text}}</h2>
 					</div>
-					<div align="end" class="calm padding">
-						<br><br><br>
-						<a class="button button-icon icon ion-share positive" ng-click="takeScreenshot()"> Share</a>
-					</div>
-				</ion-content>
-			</ion-slide-page>
-		</ion-slides>
-	
+				</div>
+				</br></br></br></br></br></br></br>
+				<div align="end" class="calm padding row">
+					<a ui-sref="psalm({psalmId: v_random})" class="button button-icon icon ion-ios-shuffle-strong positive col">
+						random
+					</a>
+					<a ui-sref="home" class="button button-icon icon ion-home positive col"></a>
+					<a class="button button-icon icon ion-share positive col" ng-click="takeScreenshot()">
+						share
+					</a>
+				</div>
+			</ion-content>
+		</ion-slide-page>
+	</ion-slides>
 	<div class="bar bar-footer bar-calm">
 		<a ui-sref="psalm({psalmId: psalm.id-1})" class="button button-icon ion-arrow-left-c">
 		</a>
@@ -29,5 +34,5 @@
 		</div>
 		<a ui-sref="psalm({psalmId: psalm.id+1})" class="button button-icon ion-arrow-right-c">
 		</a>
-	</div>	
+	</div>
 </ion-view>

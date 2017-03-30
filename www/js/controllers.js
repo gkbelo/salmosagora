@@ -44,6 +44,11 @@ angular.module('psalmstoday')
       }), 'jpg', 100, 'myPsalm');
     };
 
+    function getRandomAll(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    };
+    $scope.v_random = getRandomAll(1, 150);
+
     //slider_functions
     $scope.sliderOptions = {
         loop: false,
