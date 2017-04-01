@@ -19,7 +19,7 @@ angular.module('psalmstoday')
       $scope.psalms = dados.psalm;
     });
 
-    //slider_functions
+    //slider
     $scope.sliderIndexOptions = {
         loop: false,
         speed: 300,
@@ -37,7 +37,7 @@ angular.module('psalmstoday')
     PsalmsService.dados().then(function(dados){
       $scope.psalm = dados.psalm[$stateParams.psalmId-1];
     });
-    
+
     $scope.takeScreenshot = function() {
       navigator.screenshot.save((function(e, r) {
         window.plugins.socialsharing.share(null, null, 'file://' + r.filePath);
@@ -49,18 +49,15 @@ angular.module('psalmstoday')
     };
     $scope.v_random = getRandomAll(1, 150);
 
-    //slider_functions
+    //slider
     $scope.sliderOptions = {
         loop: false,
         speed: 300,
         effect: 'coverflow',
-        initialSlide: 0
+        initialSlide: 0,
+        pager: false, 
+        direction: 'horizontal'
       };
-          
-    $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
-      // data.slider is the instance of Swiper
-      $scope.slider = data.slider;
-    });
 
     $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
       $scope.activeIndex = data.activeIndex;
