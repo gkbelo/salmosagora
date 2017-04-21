@@ -1,7 +1,7 @@
 angular.module('psalmstoday')
 
 //_HomeController
-.controller('HomeController', function($scope, PsalmsService, $stateParams) {
+.controller('HomeController', function($scope, PsalmsService, $stateParams, $ionicHistory) {
     PsalmsService.dados().then(function(dados){
       $scope.psalm = dados.psalm[$stateParams.psalmId-1];
     });
@@ -10,7 +10,10 @@ angular.module('psalmstoday')
       return Math.floor(Math.random() * (max - min)) + min;
     };
     $scope.v_random = getRandomAll(1, 150);
-    
+
+    $scope.$on('$ionicView.enter', function() {
+      $ionicHistory.clearHistory();
+    });
 })
 
 //_PsalmGridController
@@ -38,7 +41,7 @@ angular.module('psalmstoday')
       $scope.psalm = dados.psalm[$stateParams.psalmId-1];
     });
 
-    $scope.takeScreenshot = function() {
+    $scope.share = function() {
       navigator.screenshot.save((function(e, r) {
         window.plugins.socialsharing.share(null, null, 'file://' + r.filePath);
       }), 'jpg', 100, 'myPsalm');
