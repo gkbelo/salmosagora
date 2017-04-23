@@ -1,5 +1,5 @@
 <ion-view title="Psalms Today" id="page3">
-	<ion-slides options="sliderOptions" slider="data.slider" style="max-height:80%">
+	<ion-slides options="sliderOptions" slider="data.slider" style="max-height:81%">
 		<ion-slide-page ng-repeat="v in psalm.verses">
 			<ion-content>
 				<div align="center" class="list">
@@ -13,27 +13,28 @@
 						<h2>{{v.text}}</h2>
 					</div>
 				</div>
-				</br></br></br></br></br></br></br>
-				<div align="end" class="calm padding row">
-					<a ui-sref="psalm({psalmId: v_random})" class="button button-icon icon ion-ios-shuffle-strong positive col">
-						random
-					</a>
-					<a ui-sref="home" class="button button-icon icon ion-home positive col">
-					</a>
-					<a class="button button-icon icon ion-share positive col" ng-click="share()">
-						share
-					</a>
-				</div>
 			</ion-content>
 		</ion-slide-page>
 	</ion-slides>
-	<div class="bar bar-footer bar-calm">
-		<a ui-sref="psalm({psalmId: psalm.id-1})" class="button button-icon ion-arrow-left-c">
-		</a>
-		<div class="title">
-			{{psalm.id}} / 150
+	<div>
+		<div class="calm padding row">
+			<a ui-sref="psalm({psalmId: v_random})" class="button button-icon icon ion-ios-shuffle-strong positive col">
+				random
+			</a>
+			<a ui-sref="home" class="button button-icon icon ion-home positive col">
+			</a>
+			<a class="button button-icon icon ion-share positive col" ng-click="share()">
+				share
+			</a>
 		</div>
-		<a ui-sref="psalm({psalmId: psalm.id+1})" class="button button-icon ion-arrow-right-c">
-		</a>
-	</div>
+		<div class="bar bar-footer bar-calm">
+			<a ui-sref="psalm({psalmId: psalm.id-1})" class="button button-icon ion-arrow-left-c">
+			</a>
+			<div class="title">
+				{{psalm.id}} / 150
+			</div>
+			<a ui-sref="psalm({psalmId: psalm.id+1})" class="button button-icon ion-arrow-right-c">
+			</a>
+		</div>
+	</div>	
 </ion-view>

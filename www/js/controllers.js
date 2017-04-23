@@ -52,13 +52,12 @@ angular.module('psalmstoday')
     };
     $scope.v_random = getRandomAll(1, 150);
 
-    //slider
     $scope.sliderOptions = {
         loop: false,
         speed: 300,
         effect: 'coverflow',
         initialSlide: 0,
-        pager: false, 
+        pager: true,
         direction: 'horizontal'
       };
 
