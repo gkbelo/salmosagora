@@ -66,4 +66,10 @@ angular.module('psalmstoday')
       $scope.previousIndex = data.previousIndex;
     });
 })
+
+// profile 
+.controller('ProfileController', function($scope, $stateParams) {
+
+})
+
 ;

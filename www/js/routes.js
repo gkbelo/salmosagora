@@ -3,7 +3,6 @@ angular.module('psalmstoday').config(function($stateProvider, $urlRouterProvider
   $urlRouterProvider.otherwise('/home');
 
   $stateProvider
-  
     .state('home', {
       url: '/home',
       cache: false,
@@ -22,5 +21,12 @@ angular.module('psalmstoday').config(function($stateProvider, $urlRouterProvider
       cache: false,
       templateUrl: 'templates/psalm.html',
       controller: 'PsalmController'
+    })
+
+    .state('profile', {
+      url: '/profile',
+      cache: false,
+      templateUrl: 'templates/profile.html',
+      controller: 'ProfileController'
     });
 });
