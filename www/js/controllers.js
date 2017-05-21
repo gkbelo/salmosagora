@@ -68,34 +68,7 @@ angular.module('psalmstoday')
 })
 
 // profile 
-.controller('ProfileController', function($scope, $stateParams, $http, $ionicPopup, $ionicLoading) {
-	$scope.dat = {};
+.controller('ProfileController', function($scope, $stateParams) {
 
-	$scope.sendData = function() {
-		$ionicLoading.show();
-
-		$http.get('http://cozinhapp.sergiolopes.org/novo-pedido', {
-			params: {
-				pedido: $scope.bolo.nome,
-				info: $scope.dados.nome 
-				      + ' (' + $scope.dados.telefone + ') - ' 
-				      + $scope.dados.endereco
-			}
-		}).then(function() {
-			$ionicPopup.alert({
-				title: 'Success!',
-				template: 'Thank you for your help.'
-			});
-
-		}).catch(function(erro) {
-			$ionicPopup.alert({
-				title: 'Error!',
-				template: erro.data + '. Try again.'
-			});
-
-		}).finally(function(){
-			$ionicLoading.hide();
-		});
-	};
 })
 ;
