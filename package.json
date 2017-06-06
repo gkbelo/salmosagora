@@ -6,6 +6,7 @@
         "com.darktalker.cordova.screenshot": "~0.1.5",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-device": "~1.1.3",
+        "cordova-plugin-inappbrowser": "^1.7.1",
         "cordova-plugin-splashscreen": "~4.0.0",
         "cordova-plugin-statusbar": "~2.2.0",
         "cordova-plugin-whitelist": "~1.3.0",
@@ -39,7 +40,8 @@
             "cordova-plugin-whitelist": {},
             "ionic-plugin-keyboard": {},
             "com.darktalker.cordova.screenshot": {},
-            "cordova-plugin-x-socialsharing": {}
+            "cordova-plugin-x-socialsharing": {},
+            "cordova-plugin-inappbrowser": {}
         },
         "platforms": [
             "ios"
