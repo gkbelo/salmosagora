@@ -3,20 +3,22 @@
     "version": "1.1.1",
     "description": "psalmstoday: An Ionic project",
     "dependencies": {
+        "com.darktalker.cordova.screenshot": "~0.1.5",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-console": "~1.0.4",
         "cordova-plugin-device": "~1.1.3",
+        "cordova-plugin-inappbrowser": "^0.2.2",
         "cordova-plugin-splashscreen": "~4.0.0",
         "cordova-plugin-statusbar": "~2.2.0",
         "cordova-plugin-whitelist": "~1.3.0",
+        "cordova-plugin-x-socialsharing": "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
         "gulp": "^3.5.6",
         "gulp-concat": "^2.2.0",
         "gulp-minify-css": "^0.3.0",
         "gulp-rename": "^1.2.0",
         "gulp-sass": "^2.0.4",
         "ionic-plugin-keyboard": "~2.2.1",
-        "com.darktalker.cordova.screenshot": "~0.1.5",
-        "cordova-plugin-x-socialsharing": "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git"
+        "org.apache.cordova.inappbrowser": "~0.2.2"
     },
     "devDependencies": {
         "bower": "^1.3.3",
@@ -41,7 +43,8 @@
             "cordova-plugin-whitelist": {},
             "ionic-plugin-keyboard": {},
             "com.darktalker.cordova.screenshot": {},
-            "cordova-plugin-x-socialsharing": {}
+            "cordova-plugin-x-socialsharing": {},
+            "org.apache.cordova.inappbrowser": {}
         },
         "platforms": [
             "ios"
