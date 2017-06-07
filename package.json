@@ -1,7 +1,7 @@
 {
-    "name": "psalmstoday",
+    "name": "salmosagora",
     "version": "1.1.1",
-    "description": "psalmstoday: An Ionic project",
+    "description": "salmosagora: An Ionic project",
     "dependencies": {
         "com.darktalker.cordova.screenshot": "~0.1.5",
         "cordova-ios": "^4.4.0",

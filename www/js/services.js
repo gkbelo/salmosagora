@@ -1,6 +1,6 @@
-angular.module('psalmstoday')
+angular.module('salmosagora')
 
-.service('PsalmsService', function($http, $q){
+.service('SalmosService', function($http, $q){
     var url = 'data/psalmsData.json';
     
     return {

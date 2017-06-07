@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionicframework.psalmstoday653636" version="0.0.6" versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Psalms Today</name>
+<widget id="com.ionicframework.salmosagora653636" version="0.0.6" versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Salmos Agora</name>
     <description>
-        An Ionic project to read and share your Psalms.
+        An Ionic project para ler e compatilhar salmos.
     </description>
     <author email="gkbelo@gmail.com" href="https://www.linkedin.com/in/souzagm/">
       Gabriel Souza

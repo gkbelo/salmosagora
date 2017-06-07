@@ -1,8 +1,8 @@
-angular.module('psalmstoday')
+angular.module('salmosagora')
 
 //_HomeController
-.controller('HomeController', function($scope, PsalmsService, $stateParams, $ionicHistory) {
-    PsalmsService.dados().then(function(dados){
+.controller('HomeController', function($scope, SalmosService, $stateParams, $ionicHistory) {
+    SalmosService.dados().then(function(dados){
       $scope.psalm = dados.psalm[$stateParams.psalmId-1];
     });
 
@@ -17,8 +17,8 @@ angular.module('psalmstoday')
 })
 
 //_PsalmGridController
-.controller('PsalmGridController', function($scope, PsalmsService) {
-    PsalmsService.dados().then(function(dados){
+.controller('PsalmGridController', function($scope, SalmosService) {
+    SalmosService.dados().then(function(dados){
       $scope.psalms = dados.psalm;
     });
 
@@ -36,8 +36,8 @@ angular.module('psalmstoday')
 })
 
 //_PsalmController
-.controller('PsalmController', function($scope, PsalmsService, $stateParams, $ionicPopup) {
-    PsalmsService.dados().then(function(dados){
+.controller('PsalmController', function($scope, SalmosService, $stateParams, $ionicPopup) {
+    SalmosService.dados().then(function(dados){
       $scope.psalm = dados.psalm[$stateParams.psalmId-1];
     });
 

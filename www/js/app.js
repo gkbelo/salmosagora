@@ -1,6 +1,6 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // the 2nd parameter is an array of 'requires'
-angular.module('psalmstoday', ['ionic'])
+angular.module('salmosagora', ['ionic'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

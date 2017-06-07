@@ -1,5 +1,5 @@
 /* rota do app*/
-angular.module('psalmstoday').config(function($stateProvider, $urlRouterProvider) {
+angular.module('salmosagora').config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/home');
 
   $stateProvider
